@@ -1,0 +1,39 @@
+.wrapper-home {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSide{
+    width: 50%;
+}
+
+.leftSide h4 {
+    font-size: 3rem;
+}
+
+.leftSide h1 {
+    font-size: 5rem;
+}
+
+.leftSide h2 {
+    font-size: 4rem;
+    color: rgb(209, 148, 26);
+}
+
+.leftSide span {
+    font-size: 2rem;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+
+}
+.home-icon-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+    height: 200px;
+    
+}
