@@ -19,7 +19,7 @@ function Logo() {
 const StyledLogo = styled.div`
   display: block;
   padding-top: 10px;
-  a {
+ a  {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -32,6 +32,9 @@ const StyledLogo = styled.div`
     }
     h4 {
       color: ${({ theme }) => theme.colors.white};
+    }
+    &:hover {
+      opacity: 0.8;
     }
   }
 `;

@@ -69,11 +69,12 @@ const StyledNavbar = styled.header`
   top: 0;
   right: 0;
   left: 0;
-  height: 50px;
+  height: 60px;
   z-index: 2;
   background-color: ${({ theme }) => theme.colors.black};
   width: 100%;
-  padding-left: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
   .logo {
     display: none;
   }
@@ -83,16 +84,18 @@ const StyledNavbar = styled.header`
   .show {
     display: block;
   }
+
   ul {
     position: absolute;
     top: 60px;
     right: 25px;
     background-color: ${({ theme }) => theme.colors.black};
-    padding: 20px;
+    padding: 20px ;
     border-radius: 10px;
     li {
       list-style: none;
       margin-bottom: 10px;
+      padding-top: 10px;
       cursor: pointer;
       a {
         text-decoration: none;

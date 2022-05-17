@@ -10,14 +10,17 @@ function Home() {
   return (
     <div className='wrapper-home'>
       <div className='leftSide'>
-        <h4>Addoken</h4>
-        <h1>Smart Contracts</h1>
-        <h2>2.0</h2>
-
-        <span>Smart contracts, done smarter</span> 
-        <button>
-          <Link to="/whitepaper" >Learn more</Link>
-        </button>
+        <div className='top-nadpis'>
+          <h4>Addoken</h4>
+          <h1>Smart Contracts</h1>
+          <h2>2.0</h2>
+        </div>
+        <div className='bottom-nadpis'>
+          <p>Smart contracts, done <span className='orange-color'>smarter</span></p> 
+          <button className='learn-btn'>
+            <Link to="/whitepaper" className='btn-link'>Learn more</Link>
+          </button>
+        </div>
 
       </div>
       <div className='rightSide'>
