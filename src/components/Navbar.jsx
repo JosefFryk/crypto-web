@@ -65,7 +65,7 @@ function Navbar() {
 }
 
 const StyledNavbar = styled.header`
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
@@ -75,6 +75,7 @@ const StyledNavbar = styled.header`
   width: 100%;
   padding-top: 10px;
   padding-left: 30px;
+  border-bottom: 1px solid white;
   .logo {
     display: none;
   }

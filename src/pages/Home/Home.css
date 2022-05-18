@@ -1,6 +1,13 @@
-.wrapper-home {
+
+/* wraper one */
+
+.wrapper-home-one {
     display: flex;
     flex-direction: row;
+    padding: 100px;
+    background: linear-gradient(30deg, rgb(2, 2, 88) 0 10%, rgb(0, 0, 0) 25% 75%, rgb(2, 2, 88) );
+    height: 90vh;
+    
 }
 
 .leftSide{
@@ -19,20 +26,24 @@
     font-size: 3rem;
     text-decoration: underline;
     text-decoration-color: rgb(209, 148, 26);
+    color: white;
 }
 
 .leftSide h1 {
     font-size: 5rem;
     width: 350px;
+    color: white;
 }
 
 .leftSide h2 {
     font-size: 4rem;
     color: rgb(209, 148, 26);
+  
 }
 
 .leftSide p {
     font-size: 2rem;
+    color: white;
 }
 .orange-color {
     color:rgb(209, 148, 26) ;
@@ -41,12 +52,14 @@
 .rightSide{
     display: flex;
     flex-direction: column;
+    padding-left: 80px;
 
 }
 .rightSide h2 {
-
+    padding-left: 25px;
     font-size: 35px;
-    max-width: 350px;    
+    max-width: 350px;  
+    color: rgb(196, 194, 194);  
 }
 .home-icon-right {
     display: flex;
@@ -58,16 +71,33 @@
 }
 
 .learn-btn {
-    width: 200px;
+    width: 125px;
     height: 35px;
     border-radius: 25px;
     margin-top: 20px;
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid rgb(209, 148, 26);
 }
 
 .btn-link {
    text-decoration: none; 
    font-size: 15px;
-   color: black ;
+   color: white ;
+}
+
+
+
+/* wraper two */
+
+
+.home-partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.home-partners h2 {
+    font-size: 3rem;
 }

@@ -79,19 +79,18 @@ function Footer() {
 }
 
 const StyledFooter = styled.footer`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: calc(100vw - 80px);
-  height: 220px;
-  padding: 40px 100px;
+ 
+  width: calc(100vw);
+  height: 180px;
+  padding: 20px 100px;
   background-color: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.lightGrey};
+  border-top: 1px solid white;
   .footer {
     column-gap: 40px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.lightGrey};
     .inner-footer {
       display: grid;

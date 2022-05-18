@@ -6,6 +6,8 @@ export const Container = styled.div`
   left: 80px;
   width: calc(100% - 80px);
   padding: 60px;
+  background: linear-gradient(30deg, rgb(2, 2, 88) 0 10%, rgb(19, 18, 18) 25% 100%);
+  
   @media only screen and (max-width: ${({ theme }) => theme.mobile.medium}) {
     top: 70px;
     padding: 20px;

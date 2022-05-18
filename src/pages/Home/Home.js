@@ -5,10 +5,13 @@ import { BiGasPump } from "react-icons/bi";
 import { BsGlobe2} from "react-icons/bs";
 import './Home.css'
 import { IconContext } from "react-icons";
+import Partners from '../../components/Partners';
+import TransitionBar from '../../components/TransitionBar';
 
 function Home() {
   return (
-    <div className='wrapper-home'>
+    <>
+    <div className='wrapper-home-one'>
       <div className='leftSide'>
         <div className='top-nadpis'>
           <h4>Addoken</h4>
@@ -25,31 +28,41 @@ function Home() {
       </div>
       <div className='rightSide'>
         <div className='home-icon-right' > 
-        <IconContext.Provider value={{  className: "global-class-name", size: "8rem" }}>
+        <IconContext.Provider value={{  className: "global-class-name", size: "8rem", color:'rgb(209, 148, 26)' }}>
           <VscRocket />
         </IconContext.Provider>
         <h2>10x faster then other blockchain alternatives</h2>
         </div>
         <div className='home-icon-right'>
-        <IconContext.Provider value={{  className: "global-class-name", size: "8rem" }}>
+        <IconContext.Provider value={{  className: "global-class-name", size: "8rem", color:'rgb(209, 148, 26)' }}>
           <BsGlobe2 />
         </IconContext.Provider>
         <h2>Carbon negative</h2>
         </div>
         <div className='home-icon-right'>
-        <IconContext.Provider value={{  className: "global-class-name", size: "8rem" }}>
+        <IconContext.Provider value={{  className: "global-class-name", size: "8rem", color:'rgb(209, 148, 26)' }}>
           <BiGasPump />
         </IconContext.Provider>
         <h2>Cheap gas fee</h2>
        
         </div>
+      </div>
+    </div>
 
+      <>
+      <TransitionBar/>
+      </>
 
+      <div className='wrapper-home-two'>
+        
+        <div className='home-partners'>
+          <h2>Addoken partners</h2>
+            <Partners/>
+        </div>
 
       </div>
-
-    
-    </div>
+   
+    </>
   );
 }
 

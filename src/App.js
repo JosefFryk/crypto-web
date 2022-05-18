@@ -41,8 +41,8 @@ function App() {
       <Fragment>
         <GlobalStyles />
         <Navbar />
-        <SideNavBar />
-        <Container>
+        
+       
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/services' element={<Services />} />
@@ -51,7 +51,7 @@ function App() {
             <Route path='/pricing' element={<Pricing />} />
           </Routes>
   
-        </Container>
+       
         <Footer />
       </Fragment>
     </ThemeProvider>
