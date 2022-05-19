@@ -33,11 +33,13 @@
     font-size: 5rem;
     width: 350px;
     color: white;
+    text-shadow: 0 0 80px rgb(192 219 255 / 48%), 0 0 32px rgb(65 120 255 / 24%);
 }
 
 .leftSide h2 {
     font-size: 4rem;
     color: rgb(209, 148, 26);
+    text-shadow: 0 0 80px rgb(192 219 255 / 48%), 0 0 32px rgb(65 120 255 / 24%);
   
 }
 
@@ -47,6 +49,7 @@
 }
 .orange-color {
     color:rgb(209, 148, 26) ;
+    
 }
 
 .rightSide{
@@ -60,6 +63,7 @@
     font-size: 35px;
     max-width: 350px;  
     color: rgb(196, 194, 194);  
+     text-shadow: 0 0 80px rgba(32, 70, 121, 0.48), 0 0 32px rgb(65 120 255 / 24%);
 }
 .home-icon-right {
     display: flex;
@@ -79,7 +83,7 @@
     border: 2px solid rgb(209, 148, 26);
 }
 
-.btn-link {
+.btn-link-whitepaper {
    text-decoration: none; 
    font-size: 15px;
    color: white ;
@@ -101,3 +105,59 @@
 .home-partners h2 {
     font-size: 3rem;
 }
+
+.future-wrap {
+    display: flex;
+
+}
+
+.left-side-future {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px 100px;
+    gap: 2rem;
+}
+
+.left-side-future p {
+    font-size: 1.6rem;
+    color: rgb(114, 112, 112);
+    font-family: Cantarell, sans-serif;
+}
+
+.left-side-future h4 {
+    font-size: 3rem;
+    color: #6A97CC;
+}
+
+.btn-future {
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    margin-top: 20px;
+    background-color: black;
+    border: 2px solid rgb(209, 148, 26);
+    color: white;
+}
+.link-future {
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.right-side-future {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.right-side-future img {
+    margin-left: 50%;
+    width: 500px;
+    height: 420px;
+}
+

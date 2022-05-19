@@ -1,12 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Home.css'
+
+
+//components
+import Partners from '../../components/Partners';
+import TransitionBar from '../../components/TransitionBar';
+
+//icons
 import {VscRocket} from 'react-icons/vsc'
 import { BiGasPump } from "react-icons/bi";
 import { BsGlobe2} from "react-icons/bs";
-import './Home.css'
 import { IconContext } from "react-icons";
-import Partners from '../../components/Partners';
-import TransitionBar from '../../components/TransitionBar';
+
+//images
+import globe from '../../images/globe.png'
+
+
 
 function Home() {
   return (
@@ -21,7 +31,7 @@ function Home() {
         <div className='bottom-nadpis'>
           <p>Smart contracts, done <span className='orange-color'>smarter</span></p> 
           <button className='learn-btn'>
-            <Link to="/whitepaper" className='btn-link'>Learn more</Link>
+            <Link to="/whitepaper" className='btn-link-whitepaper'>Learn more</Link>
           </button>
         </div>
 
@@ -60,6 +70,24 @@ function Home() {
             <Partners/>
         </div>
 
+        <div className='future-wrap'>
+
+          <div className='left-side-future'>
+            <h4>Join a future</h4>
+            <p>Etiam posuere lacus quis dolor. Nulla non arcu lacinia neque faucibus fringilla. Proin mattis lacinia justo. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. 
+            Donec vitae arcu. Aenean placerat. In convallis. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+             Aenean fermentum risus id tortor.</p>
+            <button className='btn-future'>
+              <Link to="/pricing" className='link-future' >Pricing</Link>
+            </button>
+          </div>
+          <div className='right-side-future'>
+            <img src={globe} alt='globe' ></img>
+          </div>
+
+        
+
+        </div>
       </div>
    
     </>
