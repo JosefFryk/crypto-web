@@ -6,6 +6,7 @@ import './Home.css'
 //components
 import Partners from '../../components/Partners';
 import TransitionBar from '../../components/TransitionBar';
+import Tab from '../../components/Tab'
 
 //icons
 import {VscRocket} from 'react-icons/vsc'
@@ -21,6 +22,7 @@ import globe from '../../images/globe.png'
 function Home() {
   return (
     <>
+    {/* landing page */}
     <div className='wrapper-home-one'>
       <div className='leftSide'>
         <div className='top-nadpis'>
@@ -62,7 +64,7 @@ function Home() {
       <>
       <TransitionBar/>
       </>
-
+    {/* second scroll page */}
       <div className='wrapper-home-two'>
         
         <div className='home-partners'>
@@ -88,6 +90,33 @@ function Home() {
         
 
         </div>
+      </div>
+
+      {/* third scroll page */}
+
+      <div className='wrapper-home-third'>
+
+        <div className='compare-text'>
+          <h2>The 3rd generation public ledger</h2>
+          <p> Aenean placerat. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+              Nullam dapibus fermentum ipsum. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nulla est. Quisque porta. Nullam at arcu a est sollicitudin euismod.
+              Praesent in mauris eu tortor porttitor accumsan. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Maecenas sollicitudin. 
+              <br></br>
+              <br></br>
+              Aenean placerat. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+              Nullam dapibus fermentum ipsum. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nulla est. Quisque porta. Nullam at arcu a est sollicitudin euismod.
+              Praesent in mauris eu tortor porttitor accumsan. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Maecenas sollicitudin.
+          </p>
+          <button className='btn-services'>
+          <Link to="/services" className='btn-link-services'>Discover more</Link>
+          </button>
+            
+        </div>
+
+        <div className='compare-tab'>
+          <Tab/>
+        </div>
+
       </div>
    
     </>

@@ -10,15 +10,20 @@ import addoken from '../images/default.svg'
 
 function Tab() {
   return (
-    <div>
+
+
+    
+    <WrapperTab>
   {/* prvni sloupec */}
-    <StyledTab>
+  <div className='sloupec'>
+
+    <StyledTab className='empty'>
     </StyledTab>
     <StyledTab>
         <span>TRANSACTIONS PER SECOND</span>
     </StyledTab>
     <StyledTab>
-       <span>AVERAGE FEE</span>
+       <span>AVERAGE FEE PER TRANSACTION</span>
     </StyledTab>
     <StyledTab>
         <span>TRANSACTION CONFIRMATION</span>
@@ -26,7 +31,10 @@ function Tab() {
     <StyledTab>
         <span>ENERGY USE PER TRANSACTION</span>
     </StyledTab>
+  </div>
 {/* druhy sloupec */}
+<div>
+
     <StyledTab>
         <div>
             <p>1st GENERATION</p>
@@ -54,7 +62,9 @@ function Tab() {
         <p>885+</p>
         <span>KWH^^</span>
     </StyledTab>
+</div>
 {/* treti sloupec */}
+<div className='sloupec'>
 <StyledTab>
         <div>
             <p>2nd GENERATION</p>
@@ -82,13 +92,16 @@ function Tab() {
         <p>102+</p>
         <span>KWH^^</span>
     </StyledTab>
+</div>
 {/* ctvrty sloupec */}
+<div className='sloupec'>
+
     <StyledTab>
         <div>
             <p>3rd GENERATION</p>
         </div>
         <div>
-            <img src={addoken} alt='AOK'></img>
+            <img src={addoken} alt='AOK' className='addoken'></img>
         </div>
         <div>
             <p>AOK</p>
@@ -110,8 +123,10 @@ function Tab() {
         <p>0.001+</p>
         <span>KWH^^</span>
     </StyledTab>
+</div>
 
-    </div>
+    </WrapperTab>
+
   );
 }
 
@@ -122,8 +137,38 @@ const StyledTab = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-top: 1px solid #3A3A3A;
+
+    border: 1px solid #3A3A3A;
     box-sizing: border-box;
+    flex: 1 1 24%;
+    width:200px;
+    align-items:center;
+    padding: 30px;
+    
+
+    .addoken {
+        height: 70px;
+        width: 70px;
+    }
+
+   
+  
+    
+
+  
+`;
+const WrapperTab = styled.div`
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 100px;
+
+       
+        
+        
+
   
 `;
 

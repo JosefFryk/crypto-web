@@ -13,7 +13,6 @@ import Services from './pages/Services/Services';
 import Features from './pages/Features/Features';
 import Whitepaper from './pages/Whitepaper/Whitepaper';
 import Pricing from './pages/Pricing/Pricing';
-import SideNavBar from './components/SideNavBar';
 import Footer from './components/Footer';
 
 
