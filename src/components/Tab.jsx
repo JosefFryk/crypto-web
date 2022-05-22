@@ -40,7 +40,7 @@ function Tab() {
             <p>1st GENERATION</p>
         </div>
         <div>
-            <img src={btc} alt='btc'></img>
+            <img src={btc} alt='btc' className='btc'></img>
         </div>
         <div>
             <p>BTC</p>
@@ -70,7 +70,7 @@ function Tab() {
             <p>2nd GENERATION</p>
         </div>
         <div>
-            <img src={eth} alt='eth'></img>
+            <img src={eth} alt='eth' className='eth'></img>
         </div>
         <div>
             <p>ETH</p>
@@ -148,9 +148,16 @@ const StyledTab = styled.div`
 
     .addoken {
         height: 70px;
-        width: 70px;
+        width: 60px;
     }
-
+    .btc {
+        height: 70px;
+        width: 50px;
+    }
+    .eth {
+        height: 70px;
+        width: 50px;
+    }
    
   
     

@@ -8,6 +8,7 @@ import Partners from '../../components/Partners';
 import TransitionBar from '../../components/TransitionBar';
 import Tab from '../../components/Tab'
 
+
 //icons
 import {VscRocket} from 'react-icons/vsc'
 import { BiGasPump } from "react-icons/bi";
@@ -117,6 +118,10 @@ function Home() {
           <Tab/>
         </div>
 
+      </div>
+
+      <div>
+        
       </div>
    
     </>

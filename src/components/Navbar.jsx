@@ -46,12 +46,12 @@ function Navbar() {
         </li>
         <li>
           <Link to='pricing' onClick={openMenu}>
-            Pricing
+            Graph
           </Link>
         </li>
         <li>
           <Link to='whitepaper' onClick={openMenu}>
-            Whitepaper
+            Docs
           </Link>
         </li>
         <li>
