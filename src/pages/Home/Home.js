@@ -22,9 +22,9 @@ import globe from '../../images/globe.png'
 
 function Home() {
   return (
-    <>
+    <div className='home-page'>
     {/* landing page */}
-    <div className='wrapper-home-one'>
+    <div className='wrapper-home-one wrapper'>
       <div className='leftSide'>
         <div className='top-nadpis'>
           <h4>Addoken</h4>
@@ -44,7 +44,7 @@ function Home() {
         <IconContext.Provider value={{  className: "global-class-name", size: "8rem", color:'rgb(209, 148, 26)' }}>
           <VscRocket />
         </IconContext.Provider>
-        <h2>10x faster then other blockchain alternatives</h2>
+        <h2>10x faster then other <br></br>blockchain alternatives</h2>
         </div>
         <div className='home-icon-right'>
         <IconContext.Provider value={{  className: "global-class-name", size: "8rem", color:'rgb(209, 148, 26)' }}>
@@ -66,7 +66,7 @@ function Home() {
       <TransitionBar/>
       </>
     {/* second scroll page */}
-      <div className='wrapper-home-two'>
+      <div className='wrapper-home-two wrapper'>
         
         <div className='home-partners'>
           <h2>Addoken partners</h2>
@@ -85,7 +85,7 @@ function Home() {
             </button>
           </div>
           <div className='right-side-future'>
-            <img src={globe} alt='globe' ></img>
+            <img src={globe} alt='globe' className='globus'></img>
           </div>
 
         
@@ -95,7 +95,7 @@ function Home() {
 
       {/* third scroll page */}
 
-      <div className='wrapper-home-third'>
+      <div className='wrapper-home-third wrapper'>
 
         <div className='compare-text'>
           <h2>The 3rd generation public ledger</h2>
@@ -124,7 +124,7 @@ function Home() {
         
       </div>
    
-    </>
+    </div>
   );
 }
 

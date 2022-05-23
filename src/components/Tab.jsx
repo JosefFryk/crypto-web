@@ -158,11 +158,6 @@ const StyledTab = styled.div`
         height: 70px;
         width: 50px;
     }
-   
-  
-    
-
-  
 `;
 const WrapperTab = styled.div`
         color: white;

@@ -1,12 +1,15 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
 
+}
 /* wraper one */
 
 .wrapper-home-one {
     display: flex;
-    flex-direction: row;
-    padding: 100px;
+    padding: 8%;
     background: linear-gradient(30deg, rgb(2, 2, 88) 0 10%, rgb(0, 0, 0) 25% 75%, rgb(2, 2, 88) );
-    height: 90vh;
+    min-height: 90vh;
     
 }
 
@@ -18,9 +21,7 @@
     padding-left: 7%;
     
 }
-.top-nadpis {
 
-}
 
 .leftSide h4 {
     font-size: 3rem;
@@ -31,9 +32,10 @@
 
 .leftSide h1 {
     font-size: 5rem;
-    width: 350px;
+    text-size-adjust: auto;
     color: white;
     text-shadow: 0 0 80px rgb(192 219 255 / 48%), 0 0 32px rgb(65 120 255 / 24%);
+    
 }
 
 .leftSide h2 {
@@ -46,6 +48,7 @@
 .leftSide p {
     font-size: 2rem;
     color: white;
+    
 }
 .orange-color {
     color:rgb(209, 148, 26) ;
@@ -55,13 +58,10 @@
 .rightSide{
     display: flex;
     flex-direction: column;
-    padding-left: 80px;
 
 }
 .rightSide h2 {
-    padding-left: 25px;
-    font-size: 35px;
-    max-width: 350px;  
+    font-size: 2rem;
     color: rgb(196, 194, 194);  
      text-shadow: 0 0 80px rgba(32, 70, 121, 0.48), 0 0 32px rgb(65 120 255 / 24%);
 }
@@ -93,6 +93,8 @@
 
 /* wraper two */
 .wrapper-home-two {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 5%;
 }
 
@@ -101,15 +103,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    
 }
 
 .home-partners h2 {
+    padding: 5%;
     font-size: 3rem;
 }
 
 .future-wrap {
     display: flex;
+    align-items: center;
 
 }
 
@@ -127,6 +131,7 @@
     font-size: 1.6rem;
     color: rgb(114, 112, 112);
     font-family: Cantarell, sans-serif;
+    min-width: 250px;
 }
 
 .left-side-future h4 {
@@ -158,9 +163,9 @@
 }
 
 .right-side-future img {
-    margin-left: 50%;
-    width: 500px;
-    height: 420px;
+    margin-left: 25%;
+    width: 60%;
+    height: 60%;
 }
 
 
@@ -196,6 +201,7 @@
     font-size: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    min-width: 250px;
 }
 
 .btn-services {
@@ -216,6 +222,31 @@
     
 }
 
+/* mobile fix */
+  @media screen and (max-width: 550px) {
+    .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+
+    }
+
+    .globus {
+        display: none;
+    }
+    .top-nadpis h1 {
+        font-size: 3rem;
+    }
+    .compare-text {
+        flex-direction: column;
+    }
+    .compare-tab {
+        display: none;
+    }
+    .home-partners {
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
+  }

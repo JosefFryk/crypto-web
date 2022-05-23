@@ -77,8 +77,7 @@ function Partners() {
 
 const StyledBox = styled.div`
   display: block;  
-  padding: 50px;
-  
+  padding: 5%;
    
 
  a  {
@@ -94,6 +93,7 @@ const StyledBox = styled.div`
     &:hover {
       opacity: 0.8;
     }
+   
   }
 `;
 

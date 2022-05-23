@@ -46,6 +46,8 @@ const StyledLogo = styled.div`
       opacity: 0.8;
     }
   }
+  @media only screen and (min-width: ${({ theme }) => theme.mobile.medium})
+ 
 `;
 
 export default TransitionBar;

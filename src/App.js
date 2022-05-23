@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router';
 
 // CSS
 import './App.css';
-import GlobalStyles, { Container } from './css/Global';
+import GlobalStyles from './css/Global';
 
 // Components
 import Navbar from './components/Navbar';
